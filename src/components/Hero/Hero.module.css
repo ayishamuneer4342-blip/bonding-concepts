@@ -1,0 +1,65 @@
+.hero {
+    background-color: var(--bg-dark);
+    /* Fallback or placeholder for image */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    /* Overlay */
+    color: #fff;
+    padding: 8rem 0;
+    text-align: center;
+    position: relative;
+    /* Add a real background image later if available */
+}
+
+.heroContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    max-width: 800px;
+}
+
+.headline {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+    color: #ffffff;
+}
+
+.subheading {
+    font-size: 1.25rem;
+    margin-bottom: 2.5rem;
+    color: #e0e0e0;
+}
+
+.ctaGroup {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.secondaryBtn {
+    /* Specific override if needed, otherwise Button.module.css handles it */
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 5rem 0;
+    }
+
+    .headline {
+        font-size: 2.5rem;
+    }
+
+    .ctaGroup {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .ctaGroup a {
+        width: 100%;
+        max-width: 300px;
+    }
+}

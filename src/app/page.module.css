@@ -1,0 +1,188 @@
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  padding: var(--section-spacing) 0;
+}
+
+.bgLight {
+  background-color: var(--bg-secondary);
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.sectionSubtitle {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+.aboutContent {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.centerBtn {
+  text-align: center;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.featureItem {
+  text-align: center;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid #f0f0f0;
+}
+
+.featureItem h3 {
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+
+.ctaSection {
+  background-color: var(--bg-dark);
+  color: #fff;
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.ctaSection h2 {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.ctaSection p {
+  color: #ccc;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.ctaBtn {
+  background-color: var(--accent-color);
+  color: #fff;
+  border: none;
+}
+
+.ctaBtn:hover {
+  background-color: var(--accent-hover);
+}
+
+@media (max-width: 768px) {
+  .sectionTitle {
+    font-size: 2rem;
+  }
+}
+
+/* Process Section */
+.processGrid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.processStep {
+  text-align: center;
+  flex: 1;
+  min-width: 200px;
+}
+
+.stepNumber {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  opacity: 0.3;
+  margin-bottom: -1rem;
+}
+
+.processStep h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.processArrow {
+  font-size: 2rem;
+  color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+  .processArrow {
+    display: none;
+  }
+
+  .processGrid {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+/* Testimonials */
+.testimonialsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.testimonialCard {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid #f0f0f0;
+}
+
+.quote {
+  font-style: italic;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.clientInfo {
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+}
+
+.clientName {
+  display: block;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.clientType {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--accent-color);
+}

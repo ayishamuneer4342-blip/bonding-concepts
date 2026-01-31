@@ -1,0 +1,74 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.info h2,
+.formContainer h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+}
+
+.infoText {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.contactItem {
+    margin-bottom: 2rem;
+}
+
+.contactItem h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--accent-color);
+}
+
+.contactItem p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.formGroup label {
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.formGroup input,
+.formGroup textarea,
+.formGroup select {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus,
+.formGroup select:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
